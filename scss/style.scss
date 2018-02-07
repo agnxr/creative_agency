@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li img {
+    width: 25px;
+    margin: 10px;
+}
+
+.navigation li img:hover {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #f56131;
+}
+.social_media {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+nav {
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color:#f56131;
+}
+
+
+@media screen and (max-width:1065px) {
+    .social_media img {
+        display: none;
+    }
+}
+
+//=====2nd section ======
+
+#home {
+    background-image: url("../images/tlo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#home div {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vw;
+    margin-bottom: 5vh;
+}
+
+#home p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 5vh;
+    line-height: 25px;
+}
+.title {
+    width: 40vw;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 55vw;
+}
+
+@media screen and (max-width:1065px) {
+    .title {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
+
+#home button {
+    background-color: #f56131;
+    width: 214px;
+    text-transform: uppercase;
+    border-color: transparent;
+    padding: 20px;
+    margin-bottom: 205px;
+}
+
+#home a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home button:hover {
+    background-color: black;
+}
+
+//====3rd section ======
+
+#about {
+    display: flex;
+}
+.tablet {
+    width: 120vw;
+    background-image: url("../images/leftimg.png");
+    background-size: cover;
+    
+}
+
+@media screen and (max-width:1065px) {
+    .tablet {
+        display: none;
+    }
+}
+.about_us {
+    background-color: #2f2339;
+}
+
+.about_us .container {
+    border: 1px solid white;
+    padding: 80px;
+}
+
+.about_us h2 {
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 30px;
+}
+.about_us p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 25px;
+    text-align: justify;
+}
