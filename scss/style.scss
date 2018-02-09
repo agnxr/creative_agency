@@ -106,7 +106,7 @@ h1 {
     }
 }
 
-#home button {
+button {
     background-color: #f56131;
     width: 214px;
     text-transform: uppercase;
@@ -115,13 +115,13 @@ h1 {
     margin-bottom: 205px;
 }
 
-#home a {
+button a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-#home button:hover {
+button:hover {
     background-color: black;
 }
 
@@ -131,7 +131,7 @@ h1 {
     display: flex;
 }
 .tablet {
-    width: 120vw;
+    width: 110vw;
     background-image: url("../images/leftimg.png");
     background-size: cover;
     
@@ -147,7 +147,6 @@ h1 {
 }
 
 .about_us .container {
-    border: 1px solid white;
     padding: 80px;
 }
 
@@ -162,4 +161,213 @@ h1 {
     color: white;
     line-height: 25px;
     text-align: justify;
+}
+
+
+//========section 4 - 3 reasons
+
+.three_reasons  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+
+ 
+}
+
+.three_reasons .container, .three_reasons .three_points {
+    width: 25%;
+}
+
+@media screen and (max-width:960px) {
+
+    .three_reasons .container, .three_reasons .three_points {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.three_reasons .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.awesome {
+    height: 50%;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+.awesome h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.awesome button {
+    background-color: #2f2339;
+    width: 150px;
+    padding: 12px;
+    align-self: center;
+}
+
+.orange_part {
+    height: 30vh;
+    background-color: #ee5d30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.three_img {
+    margin-bottom: 10px;
+}
+.three_img img {
+    width: 40px;
+}
+.orange_part .three_img {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.orange_part h5 {
+  position: absolute;
+  margin-top: 60px;
+  color: white;
+  font-size: 15px;
+}
+
+.three_points p {
+    padding: 24px;
+}
+
+//====section 5 - violet squares
+
+#services {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#services>div {
+    padding-top: 40px;
+ //   padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 20px;
+    background-color: #2f2339;
+    width: 780px;
+    position: relative;
+}
+
+
+#services h5 {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.points {
+    width: 420px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.points h6 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+#services img {
+    margin-left: 490px;
+    position: absolute;
+    height: 60vh;
+    margin-top: -445px;
+}
+
+@media screen and (max-width:960px) {
+
+    #services>div {
+        width: 100%;
+    }
+    
+}
+
+//======6 section -watch
+
+
+.watch .container {
+    height: 260px;
+    background-color:  #ee5d30;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+}
+
+.watch img {
+    width: 16vw;
+}
+
+.watch p {
+    margin-left: -21vw;
+    font-weight: bold;
+    color: white;
+    margin-right: 5vw;
+    font-size: 3vw;
+}
+
+//=====7nd section
+
+#pages {
+   //display: flex;
+   box-sizing: border-box;
+   color: white;
+   display: flex;
+}
+
+#pages img {
+    display: flex;
+}
+#pages>div {
+    background-color: #2f2339;
+    width: 65vw;
+    padding: 50px;
+    overflow: hidden;
+}
+
+#pages h4 {
+    font-size: 150%;
+    margin-bottom: 50px;
+}
+
+#pages p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+#pages h5 {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14px;
 }
