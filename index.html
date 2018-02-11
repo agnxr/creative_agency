@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-         <div class="navigation">
+         <div class="navigation bigger">
              <div class="logo">
                 <a href="#"><img src="images/logo.png" alt="logo"/></a>
              </div>
@@ -26,7 +26,7 @@
                     </ul>
              </div>
 
-            <nav>
+            <nav class="desktop_menu">
                 <ul>
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about us</a></li>
@@ -36,6 +36,27 @@
                     <li><a href="#contact">contact us</a></li>
                 </ul>
             </nav>
+
+
+            <div class="xmenu">
+                    <nav class="page-navigation clearfix mobile">
+                        <label class="navigation-toggle" for="input-toggle" onclick="myFunction(this)">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </label>
+            
+                        <input type="checkbox" id="input-toggle">
+                        <ul class="menu">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about us</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#pages">pages</a></li>
+                            <li><a href="#contact">contact us</a></li>
+                        </ul>
+                    </nav>
+            </div>
         </div>
     </header>
 
@@ -122,6 +143,8 @@
     <section id="services">
         <div>
             <h5>WE ARE <br> CREATIVE AGENCY</h5>
+        </div>
+        <div>
             <div class="points">
                 <div class="square">
                     <h6>LOREM IPSUM SIT</h6>
@@ -145,10 +168,9 @@
                     <p>Ut lobortis ullamcorper augue. Praesent magna justo, pretium pellentesque congue id, dictum in nulla. Proin gravida velit eros, at pulvinar dui bibendum eu.
                     </p>
                 </div>
+
+                <div class="service_img"></div>
             </div>
-        </div>
-        <div>
-            <img src="images/ipad.png">
         </div>
     </section>
 
@@ -161,8 +183,9 @@
     
     <section id="pages">
         <div class="container">
+            <div class="examples">
+                <div></div>
 
-            <div>
                 <h4>WE ARE <br> CREATIVE AGENCY</h4>
 
                 <h5>LOREM IPSUM DOLOR SIT</h5>
@@ -183,33 +206,124 @@
         </div>
     </section>
 
+    <section id="blog">
+        <div class="gallery">
+            <div>
+                <img src="images/blog1.png">
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Pellentesque quis interdu enean vehicula, massa quis placerat maximus, ac venenatis.
+                </p>
+            </div>
+
+            <div>
+                <img src="images/blog2.png">
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Pellentesque quis interdu enean vehicula, massa quis placerat maximus, ac venenatis.
+                </p>
+            </div>
+        
+            <div>
+                <img src="images/blog3.png">
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Pellentesque quis interdu enean vehicula, massa quis placerat maximus, ac venenatis.
+                </p>
+            </div>
+
+
+            <div>
+                <img src="images/blog4.png">
+                <h5>Lorem ipsum dolor sit</h5>
+                <p>Pellentesque quis interdu enean vehicula, massa quis placerat maximus, ac venenatis.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="blog_desc">
+            <h5>WE ARE <br> CREATIVE <br> AGENCY</h5>
+            <h6>Lorem ipusum dolor sit</h6>
+            <p>Ut dignissim nulla nec nibh tempor, vitae efficitur velit scelerisque. Proin pharetra cursus enim, non hendrerit odio efficitur eu. Vestibulum at tempus nibh. Proin nisi sem, euismod eget hendrerit et, ultricies at ante. Morbi pretium ante at mauris sagittis, vitae eleifend enim ultrices.
+            </p>
+            <button><a href="#">click here</a></button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h5>THANKS FOR VISIT</h5>
+            <h6>STAY IN TOUCH</h6>
+            <p>
+                Vestibulum at tempus nibh. Proin nisi sem, euismod eget hendrerit et, ultricies at ante. Ut dignissim nulla nec nibh tempor, vitae efficitur velit scelerisque. Proin pharetra cursus enim, non hendrerit odio efficitur eu. 
+            </p>
+        </div>
+    </section>
+
+    <section class="contact_bar">
+        <div class="icons">
+            <h5>LOREM IPSUM DOLOR SIT AMET</h5>
+            <div class="contact_square">
+                <div class="contact_icon">
+                    <img src="images/mail.png">
+                </div>
+                <div>
+                    <h6>EMAIL</h6>
+                    <p>creative@email.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact_square">
+                <div class="contact_icon">
+                    <img src="images/callus.png">
+                </div>
+                <div>
+                    <h6>CALL US!</h6>
+                    <p>+123 456 7890</p>
+                    <p>+123 456 7980</p>
+                </div>
+            </div>
+
+
+            <div class="contact_square">
+                    <div class="contact_icon">
+                        <img src="images/adres.png">
+                    </div>
+                    <div>
+                        <h6>ADDRESS</h6>
+                        <p>123, Main Road, New City</p>
+                        <p>Country, 123456</p>
+                    </div>
+            </div>
+        </div>
+        <div class="hello">
+            <h5>SAY HELLO!</h5>
+
+            <form name='registration' onSubmit="return formValidation();">
+                <ul>
+                    <li><label for="username">Name:</label></li>
+                    <li><input type="text" name="username" size="50" /></li>
+
+                    <li><label for="email">Email:</label></li>
+                    <li><input type="text" name="email" size="50" /></li>
+
+
+                    <li><label for="phone">Phone:</label></li>
+                    <li><input type="text" name="phone" /></li>
+
+                    <li><label for="desc">Message:</label></li>
+                    <li><textarea name="desc" id="desc"></textarea></li>
+                    <li><input type="submit" name="submit" value="SEND MESSAGE"/></li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
     
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 footInf tel">
-                    <p>801 222 222</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 footInf">
-                    <p class="copyrights">&copy; BB Bezpieczny Bank S.A. Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację regulaminu.
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="list-inline list-unstyled float-right">
-                        <li class="list-inline-item"><a href="#">Mapa serwisu <span> | </span></a></li>
-
-                        <li class="list-inline-item"><a href="#">English <span> | </span></a></li>
-
-                        <li class="list-inline-item"><a href="#">Twitter <span> | </span></a></li>
-                        <li class="list-inline-item"><a href="#">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="bottom"></div>
+        <p>Designed By PSDFreebies.com</p>
+        <p>COPYRIGHT 2017</p>
     </footer>
 
 
