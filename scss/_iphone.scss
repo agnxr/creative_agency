@@ -1,0 +1,66 @@
+//=== section 7 - iphone ===
+
+#pages .container {
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .examples {
+     background-color: #2f2339;
+     width: 75vw;
+     margin-left: auto;
+     position: relative;
+     padding: 7vh 1vw 7vh 14vw;
+ }
+ 
+ .examples>div {
+     height: 80%;
+     width: 20%;
+     top: 10%;
+     left: -14%;
+     margin-right: 10px;
+     position: absolute; 
+     padding: 10px;
+     vertical-align: center;
+     width: 20vw;
+     background-image: url("../images/Iphone.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+ 
+ @media screen and (max-width:750px) {
+     .examples>div {
+         display: none;
+     }
+ 
+     .examples {
+         width: 100%;
+         padding: 4vh 10vw;
+     }
+ }
+ 
+ #pages img {
+     width: 80%;
+     vertical-align: center;
+     position: absolute;
+ }
+ 
+ #pages h4 {
+     font-size: 200%;
+     margin-bottom: 50px;
+ }
+ 
+ #pages p {
+     font-weight: 300;
+     font-size: 18px;
+     margin-bottom: 50px;
+ }
+ 
+ #pages h5 {
+     margin-bottom: 10px;
+     font-weight: 300;
+     font-size: 18px;
+ }

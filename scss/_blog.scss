@@ -1,0 +1,98 @@
+// === blog ===
+
+#blog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog_desc {
+    background-color: #ee5d30;
+    width: 49%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 10%; 
+    padding-left: 10%;
+}
+
+.blog_desc>h5 {
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.blog_desc p, .blog_desc h6 {
+    color: white;
+}
+
+.blog_desc p {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.blog_desc h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog_desc button {
+    background-color: #2f2339;
+}
+
+.blog_desc button:hover {
+    background-color: black;
+    transition: .4s;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    margin-right: 2%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+//    flex-direction: row;
+}
+
+.gallery>div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40vh;
+    padding: 30px;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+@media screen and (max-width:600px) {
+    .gallery>div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery div {
+        margin-bottom: 45px;
+    }
+
+    .blog_desc {
+        width: 100%;
+    }
+
+}

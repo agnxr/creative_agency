@@ -88,10 +88,16 @@ nav a:hover {
         opacity: 0.7;
     }
 
+    @-moz-document url-prefix() {
+        .smaller { 
+            height: 80px;
+         }
+    }
+
 }
 
 
-//===MOBILE MENU =====
+//=== MOBILE MENU ====
 
 .mobile {
     display: none;
