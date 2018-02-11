@@ -1,0 +1,84 @@
+//=== 3 reasons (orange part) ===
+
+.three_reasons  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.three_reasons .container, .three_reasons .three_points {
+    width: 25%;
+}
+
+@media screen and (max-width:960px) {
+
+    .three_reasons .container, .three_reasons .three_points {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.awesome {
+    height: 50%;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+.awesome h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.awesome button {
+    background-color: #2f2339;
+    width: 150px;
+    padding: 12px;
+    align-self: center;
+}
+
+.three_reasons .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three_points p {
+    padding: 24px;
+}
+
+.orange_part {
+    background-color: #ee5d30;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.three_img {
+    margin-bottom: 10px;
+}
+
+.three_img img {
+    width: 40px;
+}
+
+.orange_part .three_img {
+    background-color: white;
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.orange_part h5 {
+  color: white;
+  font-size: 15px;
+}

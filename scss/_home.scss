@@ -1,0 +1,101 @@
+//=== 2nd section with main headline & intro ===
+
+#home {
+    background-image: url("../images/tlo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#home div {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7vw;
+    margin-bottom: 5vh;
+}
+
+#home p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 5vh;
+    line-height: 25px;
+}
+.title {
+    width: 40vw;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 55vw;
+}
+
+@media screen and (max-width:1065px) {
+    .title {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
+
+button {
+    background-color: #f56131;
+    width: 214px;
+    text-transform: uppercase;
+    border-color: transparent;
+    padding: 20px;
+    margin-bottom: 205px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+
+//==== intro ====
+
+#about {
+    display: flex;
+}
+.tablet {
+    width: 110vw;
+    background-image: url("../images/leftimg.png");
+    background-size: cover;
+    
+}
+
+@media screen and (max-width:1065px) {
+    .tablet {
+        display: none;
+    }
+}
+.about_us {
+    background-color: #2f2339;
+}
+
+.about_us .container {
+    padding: 80px;
+}
+
+.about_us h2 {
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 30px;
+}
+.about_us p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 25px;
+    text-align: justify;
+}
