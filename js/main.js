@@ -20,7 +20,57 @@ function resizeHeaderOnScroll() {
   
   window.addEventListener('scroll', resizeHeaderOnScroll);
 
+//form 
 
-//form validation
+//phone
+var phone = document.querySelector("#phone");
+var pmsg = document.querySelector("#phone_message");
+
+phone.onfocus = function (){
+    pmsg.style.display = 'block';
+};
+
+phone.onblur = function() {
+    pmsg.style.display='none';
+};
+
+//email
+
+var email = document.querySelector("#email");
+var emsg = document.querySelector("#email_message");
+
+email.onfocus = function (){
+    emsg.style.display = 'block';
+};
+
+email.onblur = function() {
+    emsg.style.display='none';
+};
+
+//name
+
+var uname = document.querySelector("#uname");
+var nmsg = document.querySelector("#name_message");
+
+uname.onfocus = function (){
+    nmsg.style.display = 'block';
+};
+
+uname.onblur = function() {
+    nmsg.style.display='none';
+};
+
+//msg
+
+var txt = document.querySelector("#txt");
+var tmsg = document.querySelector("#text_message");
+
+txt.onfocus = function (){
+    tmsg.style.display = 'block';
+};
+
+txt.onblur = function() {
+    tmsg.style.display='none';
+};
 
 
