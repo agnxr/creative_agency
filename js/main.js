@@ -1,4 +1,15 @@
-//hambuerger menu X
+// == preloader ==
+
+var preloader = document.querySelector(".preloader");
+var home = document.querySelector("#home");
+
+
+window.addEventListener('load', function () {
+  preloader.classList.add('hide');
+  home.classList.add('visible');
+});
+
+// == hambuerger menu (X) ==
 function myFunction(x) {
     x.classList.toggle("change");
 }
@@ -8,7 +19,7 @@ function resizeHeaderOnScroll() {
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 200,
     headerEl = document.querySelector(".navigation");
-    
+
     if (distanceY > shrinkOn) {
       headerEl.classList.add("smaller");
       headerEl.classList.remove("bigger");
@@ -17,10 +28,10 @@ function resizeHeaderOnScroll() {
       headerEl.classList.add("bigger");
     }
   }
-  
+
   window.addEventListener('scroll', resizeHeaderOnScroll);
 
-//form 
+//form
 
 //phone
 var phone = document.querySelector("#phone");
@@ -72,5 +83,3 @@ txt.onfocus = function (){
 txt.onblur = function() {
     tmsg.style.display='none';
 };
-
-

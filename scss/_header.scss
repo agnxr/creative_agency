@@ -7,6 +7,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+
 .navigation{
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +90,7 @@ nav a:hover {
     }
 
     @-moz-document url-prefix() {
-        .smaller { 
+        .smaller {
             height: 80px;
          }
     }
