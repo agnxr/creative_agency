@@ -3,14 +3,14 @@
 var preloader = document.querySelector(".preloader");
 var home = document.querySelector("#home");
 
-
+/*
 window.addEventListener('load', function () {
     setTimeout(function(){
       preloader.classList.add('hide');
       home.classList.add('visible');
     },1500);
 
-});
+}); */
 
 /*
 window.addEventListener('load', function () {
