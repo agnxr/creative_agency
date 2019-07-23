@@ -1,34 +1,25 @@
-// == preloader ==
-
-var preloader = document.querySelector(".preloader");
-var home = document.querySelector("#home");
-
-/*
 window.addEventListener('load', function () {
     setTimeout(function(){
-      preloader.classList.add('hide');
-      home.classList.add('visible');
-    },1500);
-
-}); */
+    document.querySelector(".preloader").classList.add('hide');
+    document.querySelector(".hero").classList.add('visible');
+    },1000);
+}); 
 
 /*
 window.addEventListener('load', function () {
-  preloader.classList.add('hide');
-  home.classList.add('visible');
+    document.querySelector(".preloader").classList.add('hide');
+    document.querySelector(".hero").classList.add('visible');
 });
 */
-// == hambuerger menu (X) ==
-function myFunction(x) {
+
+function hamburgerMenu(x) {
     x.classList.toggle("change");
 }
 
-
 function resizeHeaderOnScroll() {
-    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    let distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 200,
     headerEl = document.querySelector(".navigation");
-
     if (distanceY > shrinkOn) {
       headerEl.classList.add("smaller");
       headerEl.classList.remove("bigger");
@@ -36,15 +27,13 @@ function resizeHeaderOnScroll() {
       headerEl.classList.remove("smaller");
       headerEl.classList.add("bigger");
     }
-  }
+}
 
-  window.addEventListener('scroll', resizeHeaderOnScroll);
+window.addEventListener('scroll', resizeHeaderOnScroll);
 
 //form
-
-//phone
-var phone = document.querySelector("#phone");
-var pmsg = document.querySelector("#phone_message");
+const phone = document.querySelector("#phone");
+const pmsg = document.querySelector("#phone_message");
 
 phone.onfocus = function (){
     pmsg.style.display = 'block';
@@ -54,10 +43,8 @@ phone.onblur = function() {
     pmsg.style.display='none';
 };
 
-//email
-
-var email = document.querySelector("#email");
-var emsg = document.querySelector("#email_message");
+const email = document.querySelector("#email");
+const emsg = document.querySelector("#email_message");
 
 email.onfocus = function (){
     emsg.style.display = 'block';
@@ -66,8 +53,6 @@ email.onfocus = function (){
 email.onblur = function() {
     emsg.style.display='none';
 };
-
-//name
 
 var uname = document.querySelector("#uname");
 var nmsg = document.querySelector("#name_message");
@@ -79,8 +64,6 @@ uname.onfocus = function (){
 uname.onblur = function() {
     nmsg.style.display='none';
 };
-
-//msg
 
 var txt = document.querySelector("#txt");
 var tmsg = document.querySelector("#text_message");
