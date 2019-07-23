@@ -75,3 +75,12 @@ txt.onfocus = function (){
 txt.onblur = function() {
     tmsg.style.display='none';
 };
+
+(function() {
+	scrollTo();
+})();
+
+function scrollTo() {
+	const links = document.querySelectorAll('.scroll');
+	links.forEach(each => (each.onclick = scrollAnchors));
+}

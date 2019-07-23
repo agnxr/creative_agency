@@ -1,33 +1,30 @@
-//=== 2nd section with main headline & intro ===
-
-#home {
+.hero {
     background-image: url("../images/tlo.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        font-size: 7vw;
+        margin-bottom: 5vh;
+    }
+    p {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 5vh;
+        line-height: 25px;
+    }
 }
 
-#home div {
+.hero div {
     position: relative;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    font-size: 7vw;
-    margin-bottom: 5vh;
-}
-
-#home p {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 5vh;
-    line-height: 25px;
-}
 .title {
     width: 40vw;
     position: absolute;
@@ -49,29 +46,25 @@ button {
     border-color: transparent;
     padding: 20px;
     margin-bottom: 205px;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        transition: 1s;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
 }
 
-button a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-button:hover {
-    background-color: black;
-}
-
-
-//==== intro ====
-
-#about {
+.about {
     display: flex;
-}
-.tablet {
-    width: 110vw;
-    background-image: url("../images/leftimg.png");
-    background-size: cover;
-
+    .tablet {
+        width: 110vw;
+        background-image: url("../images/leftimg.png");
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width:1065px) {
@@ -79,23 +72,22 @@ button:hover {
         display: none;
     }
 }
+
 .about_us {
     background-color: #2f2339;
-}
-
-.about_us .container {
-    padding: 80px;
-}
-
-.about_us h2 {
-    color: white;
-    font-size: 3vw;
-    margin-bottom: 30px;
-}
-.about_us p {
-    font-size: 16px;
-    font-weight: 300;
-    color: white;
-    line-height: 25px;
-    text-align: justify;
+    .container {
+        padding: 80px;
+    }
+    h2 {
+        color: white;
+        font-size: 3vw;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        line-height: 25px;
+        text-align: justify;
+    }
 }

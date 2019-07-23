@@ -1,13 +1,21 @@
-//====section 5 - violet squares ====
 
-#services {
+.services {
     color: white;
     font-weight: 300;
     font-size: 14px;
     position: relative;
+    h5 {
+        font-size: 26px;
+    }
+    &:nth-child(2) {
+        background-color: #2f2339;
+        width: 780px;
+        position: relative;
+    }
+    
 }
 
-#services>div {
+.services>div {
     background-color: #2f2339;
     padding-top: 10vh;
     padding-left: 6vw;
@@ -15,31 +23,19 @@
     display: flex;
     flex-wrap: wrap;
 }
-#services:nth-child(2) {
-    background-color: #2f2339;
-    width: 780px;
-    position: relative;
-}
 
 .points {
     padding-bottom: 50px;
-}
-
-#services h5 {
-    font-size: 26px;
-}
-
-.points {
     width: 420px;
     display: flex;
     flex-wrap: wrap;
+    h6 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
 }
 
-.points h6 {
-    font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
 .square {
     width: 200px;
     margin-bottom: 20px;
@@ -59,13 +55,10 @@
     margin-left: 500px;
 }
 
-
 @media screen and (max-width:960px) {
-
-    #services>div {
+    .services>div {
         width: 100%;
     }
-
     .service_img {
         width: 30%;
         margin-left: 450px;
@@ -73,11 +66,9 @@
 }
 
 @media screen and (max-width:730px) {
-
     .service_img {
         display: none;
     }
-
     .square {
         width: 100%;
     }

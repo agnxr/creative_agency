@@ -1,6 +1,4 @@
-//=== section 7 - iphone ===
-
-#pages .container {
+.pages .container {
     box-sizing: border-box;
     color: white;
     display: flex;
@@ -42,25 +40,24 @@
      }
  }
  
- #pages img {
-     width: 80%;
-     vertical-align: center;
-     position: absolute;
- }
- 
- #pages h4 {
-     font-size: 200%;
-     margin-bottom: 50px;
- }
- 
- #pages p {
-     font-weight: 300;
-     font-size: 18px;
-     margin-bottom: 50px;
- }
- 
- #pages h5 {
-     margin-bottom: 10px;
-     font-weight: 300;
-     font-size: 18px;
+ .pages {
+    img {
+        width: 80%;
+        vertical-align: center;
+        position: absolute;
+    }
+    h4 {
+        font-size: 200%;
+        margin-bottom: 50px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    h5 {
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 18px;
+    }
  }

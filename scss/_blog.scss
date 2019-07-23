@@ -1,6 +1,4 @@
-// === blog ===
-
-#blog {
+.blog {
     display: flex;
     flex-wrap: wrap;
 }
@@ -12,6 +10,23 @@
     padding-bottom: 40px;
     padding-right: 10%; 
     padding-left: 10%;
+    h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    p {
+        color: white;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    button {
+        background-color: #2f2339;
+        &:hover {
+            background-color: black;
+            transition: .4s;
+        }
+    }
 }
 
 .blog_desc>h5 {
@@ -21,28 +36,6 @@
     margin-bottom: 40px;
 }
 
-.blog_desc p, .blog_desc h6 {
-    color: white;
-}
-
-.blog_desc p {
-    font-weight: 300;
-    margin-bottom: 40px;
-}
-
-.blog_desc h6 {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.blog_desc button {
-    background-color: #2f2339;
-}
-
-.blog_desc button:hover {
-    background-color: black;
-    transition: .4s;
-}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +44,14 @@
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 10%;
-//    flex-direction: row;
+    img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 12px;
+        margin-top: 10px;
+    }  
 }
 
 .gallery>div {
@@ -60,16 +60,6 @@
     width: 50%;
     height: 40vh;
     padding: 30px;
-}
-
-.gallery img {
-    max-width: 100%;
-    margin-bottom: 10px;
-}
-
-.gallery p {
-    font-size: 12px;
-    margin-top: 10px;
 }
 
 .gallery img:hover {

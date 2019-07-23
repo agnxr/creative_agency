@@ -1,4 +1,21 @@
-//=== 3 reasons (orange part) ===
+.awesome {
+    height: 50%;
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    h3 {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    button {
+        background-color: #2f2339;
+        width: 150px;
+        padding: 12px;
+        align-self: center;
+    }
+}
 
 .three_reasons  {
     display: flex;
@@ -11,32 +28,10 @@
 }
 
 @media screen and (max-width:960px) {
-
     .three_reasons .container, .three_reasons .three_points {
         width: 100%;
         margin-bottom: 10px;
-    }
-    
-}
-
-.awesome {
-    height: 50%;
-    width: 60%;
-    align-content: center;
-    text-align: center;
-    align-self: center;
-}
-.awesome h3 {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.awesome button {
-    background-color: #2f2339;
-    width: 150px;
-    padding: 12px;
-    align-self: center;
+    } 
 }
 
 .three_reasons .container {
@@ -58,14 +53,17 @@
     align-items: center;
     text-align: center;
     padding: 20px;
+    h5 {
+        color: white;
+        font-size: 15px;
+    }
 }
 
 .three_img {
     margin-bottom: 10px;
-}
-
-.three_img img {
-    width: 40px;
+    img {
+        width: 40px;
+    }
 }
 
 .orange_part .three_img {
@@ -76,9 +74,4 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
-
-.orange_part h5 {
-  color: white;
-  font-size: 15px;
 }
